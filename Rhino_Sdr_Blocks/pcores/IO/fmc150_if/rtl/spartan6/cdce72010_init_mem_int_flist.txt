@@ -1,0 +1,15 @@
+# Output products list for <cdce72010_init_mem_int>
+_xmsgs/pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt
+cdce72010_init_mem_int.asy
+cdce72010_init_mem_int.gise
+cdce72010_init_mem_int.mif
+cdce72010_init_mem_int.ngc
+cdce72010_init_mem_int.sym
+cdce72010_init_mem_int.vhd
+cdce72010_init_mem_int.vho
+cdce72010_init_mem_int.xco
+cdce72010_init_mem_int.xise
+cdce72010_init_mem_int_flist.txt
+cdce72010_init_mem_int_xmdf.tcl

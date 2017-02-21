@@ -1,0 +1,148 @@
+################################################################################
+# RHINO Resources
+################################################################################
+CONFIG VCCAUX  = 3.3;
+
+NET "SYSRST" LOC = R8;
+
+NET "SYSCLK_P" LOC = B14 | IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
+NET "SYSCLK_N" LOC = A14 | IOSTANDARD=LVDS_25 |DIFF_TERM=TRUE;
+
+################################################################################
+# FMC150 on RHINO, LPC site on FMC0
+################################################################################
+NET "ADC_N_EN"  LOC=AA15   |  IOStandard=LVCMOS25;
+NET "ADC_RESET" LOC=V13	   |  IOStandard=LVCMOS25;
+NET "ADC_SDO"   LOC=U13  	|  IOStandard=LVCMOS25;
+NET "CDCE_N_EN" LOC=Y9	   |  IOStandard=LVCMOS25;
+NET "CDCE_N_PD" LOC=AC6  	|  IOStandard=LVCMOS25;
+NET "CDCE_N_RESET" LOC=AB7	|  IOStandard=LVCMOS25;
+NET "CDCE_SDO" LOC=AA8	   |  IOStandard=LVCMOS25;
+
+NET "CHA_N[0]" LOC=AC14 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_N[1]" LOC=AA22 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_N[2]" LOC=Y20  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_N[3]" LOC=AC22 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_N[4]" LOC=W19  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_N[5]" LOC=W18  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_N[6]" LOC=AB21 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+
+NET "CHA_P[0]" LOC=AB14 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_P[1]" LOC=Y21  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_P[2]" LOC=W20  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_P[3]" LOC=AB22 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_P[4]" LOC=V18  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_P[5]" LOC=W17  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHA_P[6]" LOC=AA21 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+
+NET "CHB_N[0]" LOC=AA17 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_N[1]" LOC=V16  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_N[2]" LOC=AB19 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_N[3]" LOC=Y16  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_N[4]" LOC=AB17 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_N[5]" LOC=AA16 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_N[6]" LOC=V15  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+
+NET "CHB_P[0]" LOC=Y17  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_P[1]" LOC=U15  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_P[2]" LOC=AA19 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_P[3]" LOC=W16  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_P[4]" LOC=AA18 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_P[5]" LOC=Y15  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CHB_P[6]" LOC=V14  | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+
+NET "CLK_AB_N" LOC=AF15 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+NET "CLK_AB_P" LOC=AE15 | IOStandard=LVDS_25 | DIFF_TERM=TRUE;
+
+NET "CLK_TO_FPGA" LOC=W24 | IOStandard=LVCMOS25;
+#NET "CLK_TO_FPGA_P" LOC="A10";
+
+NET "DAC_DATA_N[0]" LOC=AB11 | IOStandard=LVDS_25;
+NET "DAC_DATA_N[1]" LOC=AB9  | IOStandard=LVDS_25;
+NET "DAC_DATA_N[2]" LOC=V10  | IOStandard=LVDS_25;
+NET "DAC_DATA_N[3]" LOC=AA11 | IOStandard=LVDS_25;
+NET "DAC_DATA_N[4]" LOC=Y13  | IOStandard=LVDS_25;
+NET "DAC_DATA_N[5]" LOC=AA12 | IOStandard=LVDS_25;
+NET "DAC_DATA_N[6]" LOC=AF14 | IOStandard=LVDS_25;
+NET "DAC_DATA_N[7]" LOC=AF13 | IOStandard=LVDS_25;
+
+NET "DAC_DATA_P[0]" LOC=AA10 | IOStandard=LVDS_25;
+NET "DAC_DATA_P[1]" LOC=AA9  | IOStandard=LVDS_25;
+NET "DAC_DATA_P[2]" LOC=V11  | IOStandard=LVDS_25;
+NET "DAC_DATA_P[3]" LOC=Y11  | IOStandard=LVDS_25;
+NET "DAC_DATA_P[4]" LOC=W14  | IOStandard=LVDS_25;
+NET "DAC_DATA_P[5]" LOC=Y12  | IOStandard=LVDS_25;
+NET "DAC_DATA_P[6]" LOC=AD14 | IOStandard=LVDS_25;
+NET "DAC_DATA_P[7]" LOC=AE13 | IOStandard=LVDS_25;
+
+NET "DAC_DCLK_N"    LOC=W12  | IOStandard=LVDS_25;
+NET "DAC_DCLK_P"    LOC=V12  | IOStandard=LVDS_25;
+NET "DAC_FRAME_N"   LOC=AA13 | IOStandard=LVDS_25;
+NET "DAC_FRAME_P"   LOC=AB13 | IOStandard=LVDS_25;
+
+NET "DAC_N_EN"      LOC=W10  |  IOStandard=LVCMOS25;
+NET "DAC_SDO"       LOC=W9	  |  IOStandard=LVCMOS25;
+NET "EXT_TRIGGER"   LOC=R1   |  IOStandard=LVCMOS25;
+
+#NET "EXT_TRIGGER_P" LOC="";
+NET "MON_N_EN"	 	  LOC=AD6  |  IOStandard=LVCMOS25;
+NET "MON_N_INT"     LOC=AD5  |  IOStandard=LVCMOS25;
+NET "MON_N_RESET"   LOC=AF6  |  IOStandard=LVCMOS25;
+NET "MON_SDO"       LOC=AC5  |  IOStandard=LVCMOS25;
+NET "PLL_STATUS"    LOC=W7	  |  IOStandard=LVCMOS25;
+NET "REF_EN"        LOC=W8	  |  IOStandard=LVCMOS25;
+NET "SPI_SCLK"      LOC=AE5  |  IOStandard=LVCMOS25;
+NET "SPI_SDATA"     LOC=AF5  |  IOStandard=LVCMOS25;
+NET "TXENABLE"      LOC=AB15 |  IOStandard=LVCMOS25;
+
+# Display the FMC "present" signal
+NET "nFMC0_PRSNT" LOC=V20 | IOSTANDARD=LVCMOS33;
+
+# constraints
+INST "CHA_P<0>" TNM = ADC_data_pins;
+INST "CHA_P<1>" TNM = ADC_data_pins;
+INST "CHA_P<2>" TNM = ADC_data_pins;
+INST "CHA_P<3>" TNM = ADC_data_pins;
+INST "CHA_P<4>" TNM = ADC_data_pins;
+INST "CHA_P<5>" TNM = ADC_data_pins;
+INST "CHA_P<6>" TNM = ADC_data_pins;
+INST "CHA_N<0>" TNM = ADC_data_pins;
+INST "CHA_N<1>" TNM = ADC_data_pins;
+INST "CHA_N<2>" TNM = ADC_data_pins;
+INST "CHA_N<3>" TNM = ADC_data_pins;
+INST "CHA_N<4>" TNM = ADC_data_pins;
+INST "CHA_N<5>" TNM = ADC_data_pins;
+INST "CHA_N<6>" TNM = ADC_data_pins;
+INST "CHB_P<0>" TNM = ADC_data_pins;
+INST "CHB_P<1>" TNM = ADC_data_pins;
+INST "CHB_P<2>" TNM = ADC_data_pins;
+INST "CHB_P<3>" TNM = ADC_data_pins;
+INST "CHB_P<4>" TNM = ADC_data_pins;
+INST "CHB_P<5>" TNM = ADC_data_pins;
+INST "CHB_P<6>" TNM = ADC_data_pins;
+INST "CHB_N<0>" TNM = ADC_data_pins;
+INST "CHB_N<1>" TNM = ADC_data_pins;
+INST "CHB_N<2>" TNM = ADC_data_pins;
+INST "CHB_N<3>" TNM = ADC_data_pins;
+INST "CHB_N<4>" TNM = ADC_data_pins;
+INST "CHB_N<5>" TNM = ADC_data_pins;
+INST "CHB_N<6>" TNM = ADC_data_pins;
+
+NET "SYSCLK_P" TNM_NET = SYSCLK_P;
+TIMESPEC TS_SYSCLK_P = PERIOD "SYSCLK_P" 10 ns HIGH 50%;
+NET "SYSCLK_N" TNM_NET = SYSCLK_N;
+TIMESPEC TS_SYSCLK_N = PERIOD "SYSCLK_N" TS_SYSCLK_P PHASE 5 ns HIGH 50%;
+
+NET "CLK_AB_P" TNM_NET = CLK_AB_P;
+TIMESPEC TS_CLK_AB_P = PERIOD "CLK_AB_P" 81.92 MHz HIGH 50%;
+
+#NET "ADC_DCLK_P" TNM_NET = ADC_DCLK_P;
+#TIMESPEC TS_ADC_DCLK_P = PERIOD "ADC_DCLK_P" 4.069 ns HIGH 50%;
+#NET "ADC_DCLK_N" TNM_NET = ADC_DCLK_N;
+#TIMESPEC TS_ADC_DCLK_N = PERIOD "ADC_DCLK_N" TS_ADC_DCLK_P PHASE 2034.5 ps HIGH 50%;
+
+NET "CLK_TO_FPGA" TNM_NET = CLK_TO_FPGA;
+TIMESPEC TS_CLK_TO_FPGA = PERIOD "CLK_TO_FPGA" 4.069 ns HIGH 50%;
+
+TIMEGRP "ADC_data_pins" OFFSET = IN 0.9 ns VALID 1.85 ns BEFORE "CLK_AB_P" RISING;
+TIMEGRP "ADC_data_pins" OFFSET = IN 0.9 ns VALID 1.85 ns BEFORE "CLK_AB_P" FALLING;

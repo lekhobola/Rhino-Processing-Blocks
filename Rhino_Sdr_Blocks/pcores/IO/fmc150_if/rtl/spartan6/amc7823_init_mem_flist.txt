@@ -1,0 +1,15 @@
+# Output products list for <amc7823_init_mem>
+_xmsgs/pn_parser.xmsgs
+amc7823_init_mem.asy
+amc7823_init_mem.gise
+amc7823_init_mem.mif
+amc7823_init_mem.ngc
+amc7823_init_mem.sym
+amc7823_init_mem.vhd
+amc7823_init_mem.vho
+amc7823_init_mem.xco
+amc7823_init_mem.xise
+amc7823_init_mem_flist.txt
+amc7823_init_mem_xmdf.tcl
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

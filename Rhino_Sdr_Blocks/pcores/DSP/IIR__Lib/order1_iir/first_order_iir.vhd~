@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity order_1_iir is
+	generic(
+	   x_w : natural          	 			  := 9;
+		c_w : natural 			  				  := 9;
+		a1  : std_logic_vector(8 downto 0) := "011000000"
+	);
+	port(
+		clk,rst : in  std_logic;
+		x 		  : in  std_logic_vector(x_w - 1 downto 0);
+		y 		  : out std_logic_vector(x_w - 1 downto 0)
+	);
+end order_1_iir;
+
+architecture behavioral of order_1_iir is
+	signal delay : std_logic_vector(x_w - 1 downto 0) := (others => '0');
+begin
+	process(clk,rst)
+		variable prod : std_logic_vector(x_w + c_w - 1 downto 0) := (others => '0');
+	begin
+		if(rst = '1') then
+			delay <= (others => '0');
+		elsif(clk ='1' and clk'event) then
+			prod := a1 * delay;
+			delay <= x + prod(x_w + c_w - 2  downto x_w - 1);
+		end if;
+		y <= delay;
+	end process;
+end  behavioral;

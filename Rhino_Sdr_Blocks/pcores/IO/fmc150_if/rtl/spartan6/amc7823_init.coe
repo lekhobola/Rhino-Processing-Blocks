@@ -1,0 +1,29 @@
+;******************************************************************
+;** AMC7823 Initialization                                       **
+;******************************************************************
+;
+; This .COE file specifies initialization values for a block
+; memory of depth=32, and width=32.
+; Values are specified in hexadecimal format:
+; Bit 31..28 = 0
+; Bit 27..24 = page (range 0x0 to 0x1)
+; Bit 23..16 = address (range 0x00 to 0x1F)
+; Bit 15..00 = data
+;
+; Loading from ROM stops when address 0x115 has been processed.
+; therefore this register must be the last entry in this file.
+;
+memory_initialization_radix=16;
+memory_initialization_vector=
+000AFFFF,
+010A0000,
+010B8080,
+010D8000,
+010E0B16,
+010F0A08,
+01100B16,
+01110A08,
+01120C18,
+01130AF1,
+01140C18,
+01150AF1;
