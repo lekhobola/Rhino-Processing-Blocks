@@ -1,0 +1,46 @@
+;******************************************************************
+;** DAC3283 Initialization                                      **
+;******************************************************************
+;
+; This .COE file specifies initialization values for a block
+; memory of depth=32, and width=16.
+; Values are specified in hexadecimal format:
+; 8 MSB = address, 8 LSB = data.
+;
+; Loading from ROM stops when address 0x1F has been processed.
+; therefore this register must be the last entry in this file.
+;
+memory_initialization_radix=16;
+memory_initialization_vector=
+0070,
+0131,
+0200,
+0310,
+04FF,
+0500,
+0600,
+0700,
+0800,
+0955,
+0AAA,
+0B55,
+0CAA,
+0D55,
+0EAA,
+0F55,
+10AA,
+1124,
+1202,
+13C2,
+1400,
+1500,
+1600,
+1704,
+1883,
+1900,
+1A00,
+1B00,
+1C00,
+1D00,
+1E24,
+1F52;

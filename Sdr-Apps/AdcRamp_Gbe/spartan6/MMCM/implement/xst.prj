@@ -1,0 +1,2 @@
+vhdl work ../../MMCM.vhd
+vhdl work ../example_design/MMCM_exdes.vhd

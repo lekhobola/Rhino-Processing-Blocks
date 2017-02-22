@@ -1,0 +1,72 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+WARNING:sim:89 - A core named <cdce72010_init_mem_int> already exists in the
+   output directory. Output products for this core may be overwritten.
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'cdce72010_init_mem_int'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: cdce72010_init_mem_int.xco
+XMDF file found: cdce72010_init_mem_int_xmdf.tcl
+Adding
+/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks/
+pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/blk_mem_gen_readme.txt -view all
+-origin_type imported
+Adding
+/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks/
+pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.asy -view all
+-origin_type imported
+Adding
+/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks/
+pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.ngc -view all
+-origin_type created
+Checking file
+"/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks
+/pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.ngc" for
+project device match ...
+File
+"/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks
+/pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.ngc" device
+information matches project device.
+Adding
+/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks/
+pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.sym -view all
+-origin_type imported
+Adding
+/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks/
+pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.vhd -view all
+-origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blo
+   cks/pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.vhd" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/lekhobola/Documents/dev/research/xilinx/sdrg/AdcRamp_Gbe/Rhino_Sdr_Blocks/
+pcores/IO/fmc150_if/rtl/spartan6/tmp/_cg/cdce72010_init_mem_int.vho -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/cdce72010_init_mem_int"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'cdce72010_init_mem_int'.
